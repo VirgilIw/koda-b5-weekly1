@@ -3,12 +3,19 @@
 // =================
 // reduce
 
-// sering dipakai untuk menghitung total, sum data API, total harga cart, dll.
+// reduce() itu method array untuk mengubah seluruh array menjadi 1 output akhir (1 nilai final).
+// nilai final itu bisa:
+// number
+// string
+// object
+// array juga bisa (bisa build ulang array yg baru)
+// bahkan nested structure
+
 const price = [10000, 20000, 5000];
 
 const total = price.reduce((acc, curr) => acc + curr, 0);
 
-console.log(total); // output: 35000
+console.log("output: " + total); // output: 35000
 
 // =================
 // includes
