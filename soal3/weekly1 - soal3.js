@@ -1,12 +1,15 @@
 // gunakan callback
 
-const celciTofah = (value, cb) => {
-  return cb(value);
+const celciTofah = (value) => {
+  let celciToFahren = (value * 9) / 5 + 32;
+  console.log(celciToFahren);
 };
 
-const fahrenheit = (celci) => {
-  let celciToFahren = (celci * 9) / 5 + 32;
-  return `suhu fahrenheit : ${celciToFahren}`;
+const fahrenheitToCelci = (celci) => {
+  const c = ((celci - 32) * 5) / 9;
+  console.log(`suhu fahrenheit : ${c}`);
 };
 
-console.log(celciTofah(25, fahrenheit));
+fahrenheitToCelci(79);
+
+celciTofah(26);
